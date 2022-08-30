@@ -1,0 +1,12 @@
+name = "monitor"
+class_name = "monitor_hardware"
+transparent = false
+alwaysontop = false
+stick = true
+blur = false
+width = "600.0"
+height = "200.0"
+x = 0.1
+y = -850.0
+
+autostart = [ ]

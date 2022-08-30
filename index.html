@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="round-slider.bundle.js" type="module"></script>
+    <title>Monitor App</title>
+</head>
+
+<body>
+    <input id="theme-toggle" type="button" value="Night" />
+    <div id="app">
+        <div class="rel">
+            <round-slider
+                id="cpu-slider"
+                readonly min="0"
+                valueLabel="hola"
+                max="100"
+                value="0"></round-slider>
+            <span id="cpu-percentage">0 %</span>
+        </div>
+        <div class="rel">
+            <round-slider
+                id="memory-slider"
+                readonly min="0"
+                valueLabel="hola"
+                max="100"
+                value="0"></round-slider>
+            <span id="memory-percentage">0 %</span>
+        </div>
+        <div>
+            <table id="disks">
+            </table>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

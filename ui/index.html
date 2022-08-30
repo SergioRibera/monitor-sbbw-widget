@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Monitor App</title>
+  <script type="module" crossorigin src="/monitor/ui/assets/index.30a13007.js"></script>
+  <link rel="stylesheet" href="/monitor/ui/assets/index.0b0e7b64.css">
+</head>
+
+<body>
+    <input id="theme-toggle" type="button" value="Night" />
+    <div id="app">
+        <div class="rel">
+            <round-slider
+                id="cpu-slider"
+                readonly min="0"
+                valueLabel="hola"
+                max="100"
+                value="0"></round-slider>
+            <span id="cpu-percentage">0 %</span>
+        </div>
+        <div class="rel">
+            <round-slider
+                id="memory-slider"
+                readonly min="0"
+                valueLabel="hola"
+                max="100"
+                value="0"></round-slider>
+            <span id="memory-percentage">0 %</span>
+        </div>
+        <div>
+            <table id="disks">
+            </table>
+        </div>
+    </div>
+    
+</body>
+
+</html>
